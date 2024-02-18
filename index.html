@@ -3,68 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Fun Page</title>
+    <title>World War II Archives</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
-            text-align: center;
             margin: 0;
             padding: 0;
         }
 
         header {
-            background-color: #3498db;
-            padding: 20px;
+            background-color: #333;
             color: white;
+            text-align: center;
+            padding: 20px;
             font-size: 24px;
         }
 
-        #fun-content {
+        nav {
+            background-color: #555;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #777;
+        }
+
+        #content {
             margin: 20px;
-            padding: 40px;
+            padding: 20px;
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        button {
-            padding: 10px 20px;
-            font-size: 18px;
-            background-color: #2ecc71;
-            color: white;
-            border: none;
-            cursor: pointer;
+        img {
+            max-width: 100%;
+            height: auto;
             border-radius: 5px;
-            margin-top: 20px;
+            margin-bottom: 15px;
         }
 
-        button:hover {
-            background-color: #27ae60;
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.5;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <header>
-        Interactive Fun Page
+        World War II Archives
     </header>
 
-    <div id="fun-content">
-        <h1>Welcome to the Fun Page!</h1>
-        <p>Click the button below to reveal a surprise:</p>
+    <nav>
+        <a href="#incidents">Incidents</a>
+        <a href="#gallery">Gallery</a>
+        <!-- Add more navigation links as needed -->
+    </nav>
 
-        <button onclick="showSurprise()">Show Surprise</button>
+    <div id="content">
+        <section id="incidents">
+            <h2>Incident 1: [Title]</h2>
+            <img src="https://placekitten.com/800/600" alt="Description of the incident">
+            <p>
+                Detailed description of the incident in World War II. Provide historical context and details.
+            </p>
 
-        <div id="surprise" style="display: none; margin-top: 20px;">
-            <img src="https://placekitten.com/400/300" alt="Surprise Kitten">
-            <p>Surprise! Here's a cute kitten for you to enjoy.</p>
-        </div>
+            <h2>Incident 2: [Title]</h2>
+            <img src="https://placekitten.com/800/601" alt="Description of the incident">
+            <p>
+                Detailed description of the incident in World War II. Provide historical context and details.
+            </p>
+
+            <!-- Add more incidents as needed -->
+        </section>
+
+        <section id="gallery">
+            <h2>Image Gallery</h2>
+            <div>
+                <img src="https://placekitten.com/400/300" alt="Sample Image 1">
+                <img src="https://placekitten.com/401/300" alt="Sample Image 2">
+                <img src="https://placekitten.com/402/300" alt="Sample Image 3">
+                <!-- Add more sample images -->
+            </div>
+        </section>
     </div>
 
-    <script>
-        function showSurprise() {
-            document.getElementById("surprise").style.display = "block";
-        }
-    </script>
+    <footer>
+        <p>&copy; 2024 World War II Archives. All rights reserved.</p>
+    </footer>
 </body>
 </html>
