@@ -3,149 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Fun Page</title>
-    <title>World War II Archives</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #3498db;
-            padding: 20px;
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            font-size: 24px;
-        }
-
-        #fun-content {
-        nav {
-            background-color: #555;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            margin: 0 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #777;
-        }
-
-        #content {
-            margin: 20px;
-            padding: 40px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        button {
-            padding: 10px 20px;
-            font-size: 18px;
-            background-color: #2ecc71;
-            color: white;
-            border: none;
-            cursor: pointer;
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-            margin-top: 20px;
-            margin-bottom: 15px;
-        }
-
-        h2 {
-            color: #333;
-        }
-
-        p {
-            color: #555;
-            line-height: 1.5;
-        }
-
-        button:hover {
-            background-color: #27ae60;
-        footer {
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-            text-align: center;
-        }
-    </style>
+    <title>WW2: The Global Conflict</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        Interactive Fun Page
-        World War II Archives
+        <nav>
+            <ul>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#countries">Countries</a></li>
+                <li><a href="#battles">Battles</a></li>
+                <li><a href="#personal-stories">Personal Stories</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <div id="fun-content">
-        <h1>Welcome to the Fun Page!</h1>
-        <p>Click the button below to reveal a surprise:</p>
-    <nav>
-        <a href="#incidents">Incidents</a>
-        <a href="#gallery">Gallery</a>
-        <!-- Add more navigation links as needed -->
-    </nav>
-
-        <button onclick="showSurprise()">Show Surprise</button>
-    <div id="content">
-        <section id="incidents">
-            <h2>Incident 1: [Title]</h2>
-            <img src="https://placekitten.com/800/600" alt="Description of the incident">
-            <p>
-                Detailed description of the incident in World War II. Provide historical context and details.
-            </p>
-
-        <div id="surprise" style="display: none; margin-top: 20px;">
-            <img src="https://placekitten.com/400/300" alt="Surprise Kitten">
-            <p>Surprise! Here's a cute kitten for you to enjoy.</p>
-        </div>
-            <h2>Incident 2: [Title]</h2>
-            <img src="https://placekitten.com/800/601" alt="Description of the incident">
-            <p>
-                Detailed description of the incident in World War II. Provide historical context and details.
-            </p>
-            <p><h1>SaI@KASAI!!</h1></p>
-            <p><h1>#pulihora SAI</h1></p>
-            <p><h1>#sai charan anna thopu</h1></p>
-
-            <!-- Add more incidents as needed -->
-        </section>
-
-        <section id="gallery">
-            <h2>Image Gallery</h2>
-            <div>
-                <img src="https://images.app.goo.gl/eAa8L9eigxwMspEr9" alt="Sample Image 1">
-                <img src="https://images.app.goo.gl/PjCkoVqFMqGM4NYq6" alt="Sample Image 2">
-                <img src="https://placekitten.com/402/300" alt="Sample Image 3">
-                <!-- Add more sample images -->
+    <main>
+        <section id="timeline">
+            <h2>Interactive Timeline</h2>
+            <div class="timeline-container">
+                <div class="event" data-date="1939-09-01">
+                    <h3>Invasion of Poland</h3>
+                    <p>Germany, under the command of Adolf Hitler, invades Poland.</p>
+                </div>
+                <div class="event" data-date="1941-12-07">
+                    <h3>Pearl Harbor Attack</h3>
+                    <p>The Japanese launch a surprise attack on the US naval base at Pearl Harbor.</p>
+                </div>
+                <!-- Add more events here -->
             </div>
         </section>
-    </div>
-
-    <script>
-        function showSurprise() {
-            document.getElementById("surprise").style.display = "block";
-        }
-    </script>
-    <footer>
-        <p>&copy; 2024 World War II Archives. All rights reserved.</p>
-    </footer>
+        <section id="countries">
+            <h2>Country Profiles</h2>
+            <div class="map-container">
+                <img src="world-map.png" alt="World Map">
+                <div class="country" data-country="usa">
+                    <h3>United States</h3>
+                    <p>The United States played a significant role in the war, particularly after the Pearl Harbor attack.</p>
+                </div>
+                <div class="country" data-country="germany">
+                    <h3>Germany</h3>
+                    <p>Germany, under the leadership of Adolf Hitler, was the main aggressor in Europe.</p>
+                </div>
+                <!-- Add more countries here -->
+            </div>
+        </section>
+        <section id="battles">
+            <h2>Battle Simulations</h2>
+            <div class="battle-container">
+                <div class="battle" data-battle="d-day">
+                    <h3>D-Day</h3>
+                    <p>June 6, 1944: The Allied forces launch a massive invasion of Nazi-occupied France.</p>
+                    <button>Start Simulation</button>
+                </div>
+                <div class="battle" data-battle="stalingrad">
+                    <h3>Battle of Stalingrad</h3>
+                    <p>August 1942 - February 1943: A brutal and decisive battle on the Eastern Front.</p>
+                    <button>Start Simulation</button>
+                </div>
+                <!-- Add more battles here -->
+            </div>
+        </section>
+        <section id="personal-stories">
+            <h2>Personal Stories</h2>
+            <div class="story-container">
+                <div class="story" data-story="soldier">
+                    <h3>A Soldier's Story</h3>
+                    <p>Read the personal account of a soldier who fought in the war.</p>
+                    <button>Read More</button>
+                </div>
+                <div class="story" data-story="civilian">
+                    <h3>A Civilian's Story</h3>
+                    <p>Read the personal account of a civilian who lived through the war.</p>
+                    <button>Read More</button>
+                </div>
+                <!-- Add more stories here -->
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
